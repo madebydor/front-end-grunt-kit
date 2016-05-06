@@ -18,3 +18,5 @@
 ehthumbs.db
 Thumbs.db
 .grunt
+/dist
+/style.min.css.map
