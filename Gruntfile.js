@@ -53,7 +53,6 @@ module.exports = function(grunt) {
             },
             scripts: {
             	files: ['build/js/*.js'],
-            	tasks: ['uglify'],
 				options: {
 					// Start a live reload server on the default port 35729
 					livereload: true,
@@ -71,5 +70,6 @@ module.exports = function(grunt) {
   	// Default task(s).
 	grunt.registerTask('default', ['bower_concat','less','uglify', 'watch']);
 	grunt.registerTask('dist', ['bower_concat', 'less', 'uglify']);
+	grunt.registerTask('build', ['less','watch']);
 
 };
